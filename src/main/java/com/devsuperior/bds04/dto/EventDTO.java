@@ -3,15 +3,22 @@ package com.devsuperior.bds04.dto;
 import java.io.Serializable;
 import java.time.LocalDate;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
 import com.devsuperior.bds04.entities.Event;
 
 public class EventDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	private Long id;
+	
+	@NotBlank
 	private String name;
 	private LocalDate date;
 	private String url;
+	
+	@NotNull(message = "Cidade não pode ser nula")
 	private Long cityId;
 	
 	public EventDTO() {
