@@ -43,6 +43,7 @@ public class CityControllerIT {
 		
 		clientUsername = "ana@gmail.com";
 		clientPassword = "123456";
+		
 		adminUsername = "bob@gmail.com";
 		adminPassword = "123456";
 	}
